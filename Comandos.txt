@@ -338,7 +338,6 @@ exit
 
 configure terminal 
 interface ethernet 0/1
-no switchport mode trunk
 switchport mode access
 switchport access vlan 46
 exit 
@@ -347,7 +346,6 @@ exit
 
 configure terminal 
 interface ethernet 0/2
-no switchport mode trunk
 switchport mode access
 switchport access vlan 46
 exit 

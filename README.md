@@ -1,5 +1,45 @@
 # REDES2_1S2021_P2_GRUPO6
 
+## Configuracion VTP
+
+
+###esw1
+
+* conf t
+* no ip routing
+* fuera del conf t...
+* vlan database
+* vtp domain grupo6
+* vtp password grupo6
+* vtp v2-mode
+* vtp server
+
+###esw2/esw3/esw4
+
+* conf t
+* no ip routing
+* fuera del conf t...
+* vlan database
+* vtp domain grupo6
+* vtp password grupo6
+* vtp v2-mode
+* vtp client
+
+
+## Configuracion Trunk
+
+###esw1/esw2/esw3/esw4
+
+* int range e x/x - x
+* duplex full
+* no shu
+* switchport trunk encapsulation dot1q
+* switchport mode trunk
+
+
+
+
+
 ## Topologia
 Para la practica se brindo la red a utilizar 192.168.5X.0/24 pero se pedia modificar los valor X por el numero de grupo por lo tanto al ser el grupo numero 6 se usara X=6 para configurar las direcciones solicitadas.
 

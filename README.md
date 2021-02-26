@@ -3,7 +3,7 @@
 ## Configuracion VTP
 
 
-###esw1
+### esw1
 
 * conf t
 * no ip routing
@@ -14,7 +14,7 @@
 * vtp v2-mode
 * vtp server
 
-###esw2/esw3/esw4
+### esw2/esw3/esw4
 
 * conf t
 * no ip routing
@@ -28,7 +28,7 @@
 
 ## Configuracion Trunk
 
-###esw1/esw2/esw3/esw4
+### esw1/esw2/esw3/esw4
 
 * int range e x/x - x
 * duplex full

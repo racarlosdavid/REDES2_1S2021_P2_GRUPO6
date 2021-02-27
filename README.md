@@ -37,7 +37,46 @@
 * switchport mode trunk
 
 
+## Configuracion vlan
+- vlan database
+- vlan 16 name ADMINISTRACION
+- vlan 26 name PROFESORES
+- vlan 36 name CLASEA
+- vlan 46 name CLASEB
+- exit
 
+## Configuracion de intervlan
+- configure terminal
+- interface vlan 16
+- description VLAN ADMINISTRACION
+- ip address 192.168.56.62 255.255.255.192
+- no shutdown
+- exit
+- exit
+
+- configure terminal
+- interface vlan 26
+- description VLAN PROFESORES
+- ip address 192.168.56.126 255.255.255.192
+- no shutdown
+- exit 
+- exit
+
+- configure terminal
+- interface vlan 36
+- description VLAN CLASEA
+- ip address 192.168.56.190 255.255.255.192
+- no shutdown
+- exit 
+- exit
+
+- configure terminal
+- interface vlan 46
+- description VLAN CLASEB
+- ip address 192.168.56.254 255.255.255.192
+- no shutdown
+- exit 
+- exit
 
 
 ## Topologia

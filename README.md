@@ -207,5 +207,5 @@ Para realizar las pruebas de convergenia se apagaron el grupo de port channel Po
 |**3**|Port Channel PAgP |PVST  | 
 |**4**|Port Channel PAgP |Rapid-pvst  | 
 
-#
+# Propuesta Final con menor Tiempo de Convergencia
 El mejor Escenario segun el estudio realizado es el Escenario # **1** ya que posee el mejor escenario/combinación de protocolo de spanning-tree y tipo de port-channel.

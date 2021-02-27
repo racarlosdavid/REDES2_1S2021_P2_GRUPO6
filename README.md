@@ -200,12 +200,22 @@ para ver el resumen de las configuraciones : sh spanning-tree summary
 Para realizar las pruebas de convergenia se apagaron el grupo de port channel Po1, y luego de esto se tomo con un temporizador el tiempo que tomo en restablecer la comunicacion entre las diferentes VPC's usando un ping extendido, Los diferentes escenarios con sus respectivos cambios fueron documentados en la siguiente tabla
 
 ### Posibles Escenarios
-|Escenario|Tipo Port-channel|Protocolo spanning-tree|Tiempo en Seg.
-|-|-|-|-|
-|**1**|Port Channel LACP |PVST  |44.16 
-|**2**|Port Channel LACP |Rapid-pvst  | 
-|**3**|Port Channel PAgP |PVST  | 
-|**4**|Port Channel PAgP |Rapid-pvst  | 
+|Escenario|Tipo Port-channel|Protocolo spanning-tree|Tiempo |Detalles
+|-|-|-|-|-|
+|**1**|Port Channel LACP |PVST  |44.16 seg | conexion estable
+|**2**|Port Channel LACP |Rapid-pvst  | 3 mins | conexion estable
+|**3**|Port Channel PAgP |PVST  | 1 min 17 seg | tiene perdida de paquetes
+|**4**|Port Channel PAgP |Rapid-pvst  | 1 min 20 seg | tiene perdida de paquetes
+
+#### Escenario 1
+![Alt text](imgs/c1.png)
+#### Escenario 2
+![Alt text](imgs/c2.png)
+#### Escenario 3
+![Alt text](imgs/c3.png)
+#### Escenario 4
+![Alt text](imgs/c4.png)
+
 
 # Propuesta Final con menor Tiempo de Convergencia
 El mejor Escenario segun el estudio realizado es el Escenario # **1** ya que posee el mejor escenario/combinación de protocolo de spanning-tree y tipo de port-channel.
